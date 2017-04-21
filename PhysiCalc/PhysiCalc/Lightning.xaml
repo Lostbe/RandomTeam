@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="Lightning" Height="300" Width="300">
     <Grid>
-        
+        <Button x:Name="backToMenuBtn" Content="Back to Menu" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="207,243,0,0" Click="button_Click"/>
+
     </Grid>
 </Window>
