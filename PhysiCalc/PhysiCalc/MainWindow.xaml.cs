@@ -38,5 +38,12 @@ namespace PhysiCalc
             lightningForm.Show();
             this.Close();
         }
+
+        private void buttonProjectile_Click(object sender, RoutedEventArgs e)
+        {
+            Projectile projectileForm = new Projectile();
+            projectileForm.Show();
+            this.Close();
+        }
     }
 }
