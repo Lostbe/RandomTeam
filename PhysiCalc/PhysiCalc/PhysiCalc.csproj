@@ -74,6 +74,7 @@
     <Compile Include="FreeFall.xaml.cs">
       <DependentUpon>FreeFall.xaml</DependentUpon>
     </Compile>
+    <Compile Include="FreeFallMath.cs" />
     <Compile Include="Lightning.xaml.cs">
       <DependentUpon>Lightning.xaml</DependentUpon>
     </Compile>

@@ -19,9 +19,15 @@ namespace PhysiCalc
     /// </summary>
     public partial class FreeFall : Window
     {
+        private FreeFallMath ffm;
+
         public FreeFall()
         {
+
             InitializeComponent();
+
+            ffm = new FreeFallMath();
+            ffm.
         }
 
         private void backToMenuBtn_Click(object sender, RoutedEventArgs e)
@@ -29,6 +35,16 @@ namespace PhysiCalc
             MainWindow mainMenu = new MainWindow();
             mainMenu.Show();
             this.Close();
+        }
+
+        private void RadioButtonHeight(object sender, RoutedEventArgs e)
+        {
+            textBlockChoiceInstruction.Text = "";
+        }
+
+        private void RadioButtonTime(object sender, RoutedEventArgs e)
+        {
+            textBlockChoiceInstruction.Text = "";
         }
     }
 }
