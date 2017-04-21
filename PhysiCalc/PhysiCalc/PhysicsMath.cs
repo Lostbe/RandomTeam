@@ -27,5 +27,13 @@ namespace PhysiCalc
             double distanceToStrike = speedOfSound * timeToEar;
             return distanceToStrike;
         }
+        public double ProjectileDistance(double launchHeight, double theta, double initialVelocity)
+        {
+            double x = Math.Sqrt(Math.Pow(initialVelocity, 2) - Math.Pow((Math.Sin(theta * Math.PI / 180) * initialVelocity), 2));
+            double t = (Math.Sin(theta * Math.PI / 180) * initialVelocity) / gravityAcceleration;
+            double d = (Math.Sin(theta * Math.PI / 180) * t + (gravityAcceleration / 2 * Math.Pow(t, 2))) + launchHeight;
+            return x * (t + FreeFallMath(d, false));
+
+        }
     }
 }
