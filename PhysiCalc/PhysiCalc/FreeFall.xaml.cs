@@ -41,7 +41,7 @@ namespace PhysiCalc
             textBlockChoiceInstruction.Text = "";
             if (radioButtonTime.IsChecked == true)
             {
-                inputType = false;
+                inputType = true;
             }
         }
 
@@ -50,8 +50,13 @@ namespace PhysiCalc
             textBlockChoiceInstruction.Text = "";
             if (radioButtonHeight.IsChecked == true)
             {
-                inputType = true;
+                inputType = false;
             }
+        }
+
+        private void buttonCalc_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(Convert.ToString($"{pm.FreeFallMath(Convert.ToDouble(textBoxChoiceData.Text), inputType)}"));
         }
     }
 }
