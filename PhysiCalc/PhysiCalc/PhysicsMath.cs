@@ -9,7 +9,7 @@ namespace PhysiCalc
     class PhysicsMath
     {
         const double gravityAcceleration = 9.8;
-        const int speedOfSound = 343;
+        const double speedOfSound = .343;
 
         public double FreeFallMath (double timeOrHeight, bool inputType)//if inputType = true, then
         {
@@ -22,9 +22,10 @@ namespace PhysiCalc
                 return 0.5 * gravityAcceleration * Math.Pow(timeOrHeight, 2);
             }
         }
-        public double LightningMath(int timeToEar)
+        public double LightningMath(double timeToEar)
         {
-
+            double distanceToStrike = speedOfSound * timeToEar;
+            return distanceToStrike;
         }
     }
 }
