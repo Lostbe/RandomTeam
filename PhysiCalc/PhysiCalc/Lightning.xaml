@@ -6,13 +6,38 @@
         xmlns:local="clr-namespace:PhysiCalc"
         mc:Ignorable="d"
         Title="Lightning" Height="300" Width="270.681">
+    <Window.Background>
+        <ImageBrush/>
+    </Window.Background>
     <Grid Margin="0,0,2,0">
-        <Button x:Name="backToMenuBtn" Content="Back to Menu" HorizontalAlignment="Left" VerticalAlignment="Top" Width="92" Margin="156,239,0,0" Click="button_Click"/>
-        <Label x:Name="label" Content="How much time elapsed between seeing the &#xD;&#xA;flash, and hearing the thunder?" HorizontalAlignment="Left" Margin="10,32,0,0" VerticalAlignment="Top" Height="60" Width="248"/>
-        <TextBox x:Name="textBoxTimeToEar" HorizontalAlignment="Left" Height="23" Margin="131,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="59"/>
-        <Label x:Name="label1" Content="Time elapsed (sec):" HorizontalAlignment="Left" Margin="19,97,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="buttonLightningDistance" Content="Calculate" HorizontalAlignment="Left" Margin="93,150,0,0" VerticalAlignment="Top" Width="75" Click="buttonLightningDistance_Click"/>
-        <TextBlock x:Name="textBlockLightningStrike" HorizontalAlignment="Left" Margin="86,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="51" Width="95"/>
+        <Image x:Name="lightning_jpg" Source="lightning.jpg" Stretch="Fill" Opacity="0.74"/>
+
+        <Button x:Name="backToMenuBtn" Content="Back to Menu" Margin="156,239,13,10" Click="button_Click" Foreground="White">
+            <Button.BorderBrush>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF39508D" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.BorderBrush>
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF39508D" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <Label x:Name="label" Content="How much time elapsed between seeing the &#xD;&#xA;flash, and hearing the thunder?" Margin="10,32,3,0" VerticalAlignment="Top" Height="60" Foreground="White"/>
+        <TextBox x:Name="textBoxTimeToEar" Margin="131,100,71,146" TextWrapping="Wrap"/>
+        <Label x:Name="label1" Content="Time elapsed (sec):" HorizontalAlignment="Left" Margin="19,97,0,0" VerticalAlignment="Top" Foreground="White"/>
+        <Button x:Name="buttonLightningDistance" Content="Calculate" Margin="93,150,93,0" VerticalAlignment="Top" Click="buttonLightningDistance_Click" Foreground="White" BorderThickness="1,1,1,0" BorderBrush="#FF454B74">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="Black" Offset="0"/>
+                    <GradientStop Color="#FF39508D" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
+        <TextBlock x:Name="textBlockLightningStrike" Margin="86,183,80,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="51" Foreground="#FFFFFDFD"/>
 
     </Grid>
 </Window>
