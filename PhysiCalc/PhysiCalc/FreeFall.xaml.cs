@@ -19,15 +19,15 @@ namespace PhysiCalc
     /// </summary>
     public partial class FreeFall : Window
     {
-        private FreeFallMath ffm;
+        private PhysicsMath pm;
 
         public FreeFall()
         {
 
             InitializeComponent();
 
-            ffm = new FreeFallMath();
-            ffm.
+            pm = new PhysicsMath();
+            
         }
 
         private void backToMenuBtn_Click(object sender, RoutedEventArgs e)
