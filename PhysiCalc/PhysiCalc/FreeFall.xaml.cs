@@ -27,7 +27,7 @@ namespace PhysiCalc
             InitializeComponent();
 
             pm = new PhysicsMath();
-            
+           
         }
 
         private void backToMenuBtn_Click(object sender, RoutedEventArgs e)
