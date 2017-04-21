@@ -10,6 +10,7 @@ namespace PhysiCalc
     {
         const double gravityAcceleration = 9.8;
         const int speedOfSound = 343;
+
         public double FreeFallMath (int timeOrHeight, bool inputType)//if inputType = true, then
         {
             if(inputType == true)
@@ -17,6 +18,6 @@ namespace PhysiCalc
 
             }
         }
-        //sup dawg wanna play league?
+        public double LightningMath(int timeToEar)
     }
 }
