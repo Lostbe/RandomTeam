@@ -15,7 +15,11 @@ namespace PhysiCalc
         {
             if(inputType == true)
             {
-
+                return Math.Sqrt(timeOrHeight / (0.5 * gravityAcceleration));
+            }
+            else
+            {
+                return 0.5 * gravityAcceleration * Math.Pow(timeOrHeight, 2);
             }
         }
         public double LightningMath(int timeToEar)

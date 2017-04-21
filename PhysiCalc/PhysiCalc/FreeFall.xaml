@@ -11,8 +11,8 @@
             <RowDefinition Height="269*"/>
             <RowDefinition Height="146*"/>
         </Grid.RowDefinitions>
-        <RadioButton x:Name="radioButtonHeight" Content="Height of ledge" HorizontalAlignment="Left" Margin="90,50,0,0" VerticalAlignment="Top" Checked="RadioButtonHeight"/>
-        <RadioButton x:Name="radioButtonTime" Content="Time of freefall" HorizontalAlignment="Left" Margin="90,79,0,0" VerticalAlignment="Top" Checked="radioButtonTime"/>
+        <RadioButton x:Name="radioButtonHeight" Content="Height of ledge" HorizontalAlignment="Left" Margin="90,50,0,0" VerticalAlignment="Top" Checked="radioButtonHeight_Checked"/>
+        <RadioButton x:Name="radioButtonTime" Content="Time of freefall" HorizontalAlignment="Left" Margin="90,79,0,0" VerticalAlignment="Top" Checked="radioButtonTime_Checked"/>
         <Label x:Name="label" Content="What would you like to know?" HorizontalAlignment="Left" Margin="65,8,0,0" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlockChoiceInstruction" HorizontalAlignment="Left" Margin="10,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272" Height="49" TextAlignment="Center"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="114" Height="23"/>

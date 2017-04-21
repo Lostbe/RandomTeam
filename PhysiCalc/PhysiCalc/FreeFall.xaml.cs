@@ -20,7 +20,7 @@ namespace PhysiCalc
     public partial class FreeFall : Window
     {
         private PhysicsMath pm;
-
+        bool inputType;
         public FreeFall()
         {
 
@@ -36,15 +36,22 @@ namespace PhysiCalc
             mainMenu.Show();
             this.Close();
         }
-
-        private void RadioButtonHeight(object sender, RoutedEventArgs e)
+        private void radioButtonTime_Checked(object sender, RoutedEventArgs e)
         {
             textBlockChoiceInstruction.Text = "";
+            if (radioButtonTime.IsChecked == true)
+            {
+                inputType = false;
+            }
         }
 
-        private void RadioButtonTime(object sender, RoutedEventArgs e)
+        private void radioButtonHeight_Checked(object sender, RoutedEventArgs e)
         {
             textBlockChoiceInstruction.Text = "";
+            if (radioButtonHeight.IsChecked == true)
+            {
+                inputType = true;
+            }
         }
     }
 }
