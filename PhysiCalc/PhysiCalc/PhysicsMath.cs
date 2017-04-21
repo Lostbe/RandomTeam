@@ -24,7 +24,7 @@ namespace PhysiCalc
         }
         public double LightningMath(int timeToEar)
         {
-
+            return 0;
         }
     }
 }

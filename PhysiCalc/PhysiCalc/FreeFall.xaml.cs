@@ -53,10 +53,17 @@ namespace PhysiCalc
                 inputType = false;
             }
         }
-
-        private void buttonCalc_Click(object sender, RoutedEventArgs e)
+        private void buttonCalc_Click_1(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(Convert.ToString($"{pm.FreeFallMath(Convert.ToDouble(textBoxChoiceData.Text), inputType)}"));
+            freeFallOutputTxtBlock.Text = $"{pm.FreeFallMath(Convert.ToDouble(textBoxChoiceData.Text), inputType)}";
+            if(inputType == true)
+            {
+                freeFallOutputTxtBlock.Text += " sec";
+            }
+            else
+            {
+                freeFallOutputTxtBlock.Text += " meters";
+            }
         }
     }
 }
