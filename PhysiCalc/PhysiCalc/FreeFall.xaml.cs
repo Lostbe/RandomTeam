@@ -62,14 +62,14 @@ namespace PhysiCalc
 
         private void buttonCalc_Click(object sender, RoutedEventArgs e)
         {
-            freeFallOutputTxtBlock.Text = $"{pm.FreeFallMath(Convert.ToDouble(textBoxChoiceData.Text), inputType)}";
+            freeFallOutputTextBlock.Text = $"{pm.FreeFallMath(Convert.ToDouble(textBoxChoiceData.Text), inputType)}";
             if (inputType == true)
             {
-                freeFallOutputTxtBlock.Text += " sec";
+                freeFallOutputTextBlock.Text += " sec";
             }
             else
             {
-                freeFallOutputTxtBlock.Text += " meters";
+                freeFallOutputTextBlock.Text += " meters";
             }
         }
     }
