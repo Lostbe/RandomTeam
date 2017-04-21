@@ -23,5 +23,12 @@ namespace PhysiCalc
         {
             InitializeComponent();
         }
+
+        private void backToMenuBtn_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainMenu = new MainWindow();
+            mainMenu.Show();
+            this.Close();
+        }
     }
 }
