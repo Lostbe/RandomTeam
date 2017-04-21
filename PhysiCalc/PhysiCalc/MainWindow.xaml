@@ -5,13 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PhysiCalc"
         mc:Ignorable="d"
-        Title="Menu" Height="257.933" Width="250.163">
-    <Grid Margin="0,0,0,1">
+        Title="Menu" Height="350" Width="250.163">
+    <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0*"/>
-            <ColumnDefinition Width="0*"/>
-            <ColumnDefinition/>
+            <ColumnDefinition Width="80*"/>
+            <ColumnDefinition Width="437*"/>
         </Grid.ColumnDefinitions>
+        <Button x:Name="buttonFreeFall" Content="Freefall" Grid.Column="1" HorizontalAlignment="Left" Margin="46,65,0,0" VerticalAlignment="Top" Width="75" Click="buttonFreeFall_Click"/>
+        <Button x:Name="buttonLightning" Content="Lightning" Grid.Column="1" HorizontalAlignment="Left" Margin="46,130,0,0" VerticalAlignment="Top" Width="75" Click="buttonLightning_Click"/>
+        <Label x:Name="label" Content="Select Mode" Grid.Column="1" HorizontalAlignment="Left" Margin="45,10,0,0" VerticalAlignment="Top"/>
         <Button x:Name="buttonFreeFall" Content="Freefall" Grid.Column="1" HorizontalAlignment="Left" Margin="46,65,0,0" VerticalAlignment="Top" Width="75" Click="buttonFreeFall_Click"/>
         <Button x:Name="buttonLightning" Content="Lightning" Grid.Column="1" HorizontalAlignment="Left" Margin="46,130,0,0" VerticalAlignment="Top" Width="75" Click="buttonLightning_Click"/>
         <Label x:Name="label" Content="Select Mode" Grid.Column="1" HorizontalAlignment="Left" Margin="45,10,0,0" VerticalAlignment="Top"/>
