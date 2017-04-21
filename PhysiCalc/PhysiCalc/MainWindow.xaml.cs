@@ -24,5 +24,19 @@ namespace PhysiCalc
         {
             InitializeComponent();
         }
+
+        private void buttonFreeFall_Click(object sender, RoutedEventArgs e)
+        {
+            FreeFall freefallForm = new FreeFall();
+            freefallForm.Show();
+            this.Close();
+        }
+
+        private void buttonLightning_Click(object sender, RoutedEventArgs e)
+        {
+            Lightning lightningForm = new Lightning();
+            lightningForm.Show();
+            this.Close();
+        }
     }
 }
