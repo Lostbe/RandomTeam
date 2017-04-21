@@ -57,8 +57,13 @@ namespace PhysiCalc
         }
         private void buttonCalc_Click_1(object sender, RoutedEventArgs e)
         {
+
+        }
+
+        private void buttonCalc_Click(object sender, RoutedEventArgs e)
+        {
             freeFallOutputTxtBlock.Text = $"{pm.FreeFallMath(Convert.ToDouble(textBoxChoiceData.Text), inputType)}";
-            if(inputType == true)
+            if (inputType == true)
             {
                 freeFallOutputTxtBlock.Text += " sec";
             }

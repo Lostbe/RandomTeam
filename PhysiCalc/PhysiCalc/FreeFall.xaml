@@ -17,9 +17,9 @@
         <TextBlock x:Name="textBlockChoiceInstruction" HorizontalAlignment="Left" Margin="77,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Height="49" TextAlignment="Center"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="114" Height="23"/>
         <TextBox x:Name="textBoxChoiceData" HorizontalAlignment="Left" Height="23" Margin="90,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextAlignment="Center"/>
-        <Button x:Name="buttonCalc" Content="Calculate" HorizontalAlignment="Left" Margin="113,0,0,0" VerticalAlignment="Top" Width="75" Height="33" Grid.Row="1" Background="#FFABAFBD" BorderThickness="0"/>
+        <Button x:Name="buttonCalc" Content="Calculate" HorizontalAlignment="Left" Margin="113,0,0,0" VerticalAlignment="Top" Width="75" Height="33" Grid.Row="1" Background="#FFABAFBD" BorderThickness="0" Click="buttonCalc_Click"/>
         <Button x:Name="backToMenuBtn" Content="Back to menu" HorizontalAlignment="Left" Margin="208,86,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="backToMenuBtn_Click"/>
-        <TextBlock x:Name="freeFallOutputTxtBlock" HorizontalAlignment="Left" Margin="113,55,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="75"/>
+        <TextBlock x:Name="freeFallOutputTxtBlock" HorizontalAlignment="Left" Margin="113,55,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Result" VerticalAlignment="Top" Width="75" TextAlignment="Center"/>
 
     </Grid>
 </Window>
