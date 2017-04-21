@@ -10,13 +10,16 @@ namespace PhysiCalc
     {
         const double gravityAcceleration = 9.8;
         const int speedOfSound = 343;
-        public double FreeFallMath (int timeOrHeight, bool inputType)//if inputType = true, then
+        public double FreeFallMath (double timeOrHeight, bool inputType)//if inputType = true, then it is height, else it is time
         {
             if(inputType == true)
             {
-
+                return Math.Sqrt(timeOrHeight / (0.5 * gravityAcceleration));
+            }
+            else
+            {
+                return 0.5 * gravityAcceleration * Math.Pow(timeOrHeight, 2);
             }
         }
-        //sup dawg wanna play league?
     }
 }
