@@ -5,12 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PhysiCalc"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Menu" Height="350" Width="250.163">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="80*"/>
             <ColumnDefinition Width="437*"/>
         </Grid.ColumnDefinitions>
+        <Button x:Name="buttonFreeFall" Content="Freefall" Grid.Column="1" HorizontalAlignment="Left" Margin="46,65,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="buttonLightning" Content="Lightning" Grid.Column="1" HorizontalAlignment="Left" Margin="46,130,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="label" Content="Select Mode" Grid.Column="1" HorizontalAlignment="Left" Margin="45,10,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
