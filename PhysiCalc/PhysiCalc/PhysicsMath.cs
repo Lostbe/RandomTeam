@@ -8,5 +8,14 @@ namespace PhysiCalc
 {
     class PhysicsMath
     {
+        const double gravityAcceleration = 9.8;
+        const int speedOfSound = 343;
+        public double FreeFallMath (int timeOrHeight, bool inputType)//if inputType = true, then
+        {
+            if(inputType == true)
+            {
+
+            }
+        }
     }
 }
