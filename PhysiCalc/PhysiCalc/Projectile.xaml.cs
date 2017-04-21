@@ -30,5 +30,10 @@ namespace PhysiCalc
             mainMenu.Show();
             this.Close();
         }
+
+        private void buttonCalculate_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

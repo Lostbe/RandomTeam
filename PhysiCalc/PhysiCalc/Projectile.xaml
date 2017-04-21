@@ -5,9 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PhysiCalc"
         mc:Ignorable="d"
-        Title="Projectile" Height="300" Width="300">
+        Title="Projectile" Height="329.032" Width="386.291">
     <Grid>
-        <Button x:Name="backToMenuBtn" Content="Back to menu" HorizontalAlignment="Left" Margin="207,243,0,0" VerticalAlignment="Top" Width="75" Click="backToMenuBtn_Click"/>
+        <Button x:Name="backToMenuBtn" Content="Back to menu" Margin="248,269,10,10" Click="backToMenuBtn_Click"/>
+        <Label x:Name="label" Content="Please enter the value of Theta (degrees). " HorizontalAlignment="Left" Margin="10,111,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBoxTheta" HorizontalAlignment="Left" Height="23" Margin="248,114,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label1" Content="Please enter how high above the&#xD;&#xA; ground the projectile is &#xD;&#xA;launched from (meters)." HorizontalAlignment="Left" Margin="10,142,0,0" VerticalAlignment="Top" Height="58" Width="201"/>
+        <TextBox x:Name="textBoxLaunchHeight" HorizontalAlignment="Left" Height="23" Margin="166,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Image x:Name="projectileDiagram_png" Margin="10,10,92,193" Source="projectileDiagram.png" Stretch="Fill"/>
+        <Button x:Name="buttonCalculate" Content="Calculate" HorizontalAlignment="Left" Margin="108,205,0,0" VerticalAlignment="Top" Width="75" Click="buttonCalculate_Click"/>
+        <TextBlock x:Name="textBlockHorizontalDistance" HorizontalAlignment="Left" Margin="19,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="201"/>
 
     </Grid>
 </Window>
