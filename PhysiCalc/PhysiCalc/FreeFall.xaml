@@ -8,18 +8,17 @@
         Title="FreeFall" Height="363.468" Width="301.064">
     <Grid Margin="0,0,0,1">
         <Grid.RowDefinitions>
-            <RowDefinition Height="269*"/>
-            <RowDefinition Height="146*"/>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
         </Grid.RowDefinitions>
-        <RadioButton x:Name="radioButtonHeight" Content="Height of ledge" HorizontalAlignment="Left" Margin="90,50,0,0" VerticalAlignment="Top" Checked="radioButtonHeight_Checked"/>
-        <RadioButton x:Name="radioButtonTime" Content="Time of freefall" HorizontalAlignment="Left" Margin="90,79,0,0" VerticalAlignment="Top" Checked="radioButtonTime_Checked"/>
-        <Label x:Name="label" Content="What would you like to know?" HorizontalAlignment="Left" Margin="65,8,0,0" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlockChoiceInstruction" HorizontalAlignment="Left" Margin="77,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Height="49" TextAlignment="Center"/>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="114" Height="23"/>
-        <TextBox x:Name="textBoxChoiceData" HorizontalAlignment="Left" Height="23" Margin="90,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextAlignment="Center"/>
-        <Button x:Name="buttonCalc" Content="Calculate" HorizontalAlignment="Left" Margin="113,0,0,0" VerticalAlignment="Top" Width="75" Height="33" Grid.Row="1" Background="#FFABAFBD" BorderThickness="0" Click="buttonCalc_Click"/>
-        <Button x:Name="backToMenuBtn" Content="Back to menu" HorizontalAlignment="Left" Margin="208,86,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="backToMenuBtn_Click"/>
-        <TextBlock x:Name="freeFallOutputTextBlock" HorizontalAlignment="Left" Margin="113,55,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Result" VerticalAlignment="Top" Width="75" TextAlignment="Center"/>
+        <RadioButton x:Name="radioButtonHeight" Content="Height of ledge" HorizontalAlignment="Left" Margin="93,51,0,0" VerticalAlignment="Top" Checked="radioButtonHeight_Checked" Height="16" Width="105"/>
+        <RadioButton x:Name="radioButtonTime" Content="Time of freefall" HorizontalAlignment="Left" Margin="93,81,0,0" VerticalAlignment="Top" Checked="radioButtonTime_Checked" Height="15" Width="101"/>
+        <Label x:Name="label" Content="What would you like to know?" Margin="67,8,50,0" Height="27" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlockChoiceInstruction" HorizontalAlignment="Left" Margin="73,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Height="50" TextAlignment="Center"/>
+        <TextBox x:Name="textBoxChoiceData" HorizontalAlignment="Left" Height="24" Margin="85,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" TextAlignment="Center"/>
+        <Button x:Name="buttonCalc" Content="Calculate" HorizontalAlignment="Left" Margin="110,0,0,76" Width="77" Background="#FFABAFBD" BorderThickness="0" Click="buttonCalc_Click" Height="34" VerticalAlignment="Bottom"/>
+        <Button x:Name="backToMenuBtn" Content="Back to menu" HorizontalAlignment="Left" Margin="206,0,0,10" Width="77" Click="backToMenuBtn_Click" Height="20" VerticalAlignment="Bottom"/>
+        <TextBlock x:Name="freeFallOutputTextBlock" Margin="110,0,106,17" TextWrapping="Wrap" Text="Result" TextAlignment="Center" Height="49" VerticalAlignment="Bottom"/>
 
     </Grid>
 </Window>
