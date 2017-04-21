@@ -42,6 +42,7 @@ namespace PhysiCalc
             if (radioButtonTime.IsChecked == true)
             {
                 inputType = true;
+                textBlockChoiceInstruction.Text = "Please enter the height of the ledge in meters.";
             }
         }
 
@@ -51,6 +52,7 @@ namespace PhysiCalc
             if (radioButtonHeight.IsChecked == true)
             {
                 inputType = false;
+                textBlockChoiceInstruction.Text = "Please enter the time for an object to fall in seconds.";
             }
         }
         private void buttonCalc_Click_1(object sender, RoutedEventArgs e)

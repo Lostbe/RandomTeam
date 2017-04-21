@@ -14,10 +14,10 @@
         <RadioButton x:Name="radioButtonHeight" Content="Height of ledge" HorizontalAlignment="Left" Margin="90,50,0,0" VerticalAlignment="Top" Checked="radioButtonHeight_Checked"/>
         <RadioButton x:Name="radioButtonTime" Content="Time of freefall" HorizontalAlignment="Left" Margin="90,79,0,0" VerticalAlignment="Top" Checked="radioButtonTime_Checked"/>
         <Label x:Name="label" Content="What would you like to know?" HorizontalAlignment="Left" Margin="65,8,0,0" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlockChoiceInstruction" HorizontalAlignment="Left" Margin="10,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="272" Height="49" TextAlignment="Center"/>
+        <TextBlock x:Name="textBlockChoiceInstruction" HorizontalAlignment="Left" Margin="77,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143" Height="49" TextAlignment="Center"/>
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,229,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="114" Height="23"/>
-        <TextBox x:Name="textBoxChoiceData" HorizontalAlignment="Left" Height="23" Margin="90,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="buttonCalc" Content="Calculate" HorizontalAlignment="Left" Margin="113,0,0,0" VerticalAlignment="Top" Width="75" Height="33" Grid.Row="1" Click="buttonCalc_Click_1"/>
+        <TextBox x:Name="textBoxChoiceData" HorizontalAlignment="Left" Height="23" Margin="90,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextAlignment="Center"/>
+        <Button x:Name="buttonCalc" Content="Calculate" HorizontalAlignment="Left" Margin="113,0,0,0" VerticalAlignment="Top" Width="75" Height="33" Grid.Row="1" Background="#FFABAFBD" BorderThickness="0"/>
         <Button x:Name="backToMenuBtn" Content="Back to menu" HorizontalAlignment="Left" Margin="208,86,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75" Click="backToMenuBtn_Click"/>
         <TextBlock x:Name="freeFallOutputTxtBlock" HorizontalAlignment="Left" Margin="113,55,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="75"/>
 

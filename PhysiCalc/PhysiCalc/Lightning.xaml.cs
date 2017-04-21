@@ -19,9 +19,11 @@ namespace PhysiCalc
     /// </summary>
     public partial class Lightning : Window
     {
+        private PhysicsMath pm;
         public Lightning()
         {
             InitializeComponent();
+            pm = new PhysicsMath();
         }
 
         private void button_Click(object sender, RoutedEventArgs e)
@@ -29,6 +31,12 @@ namespace PhysiCalc
             MainWindow mainMenu = new MainWindow();
             mainMenu.Show();
             this.Close();
+        }
+
+        private void buttonLightningDistance_Click(object sender, RoutedEventArgs e)
+        {
+            double timeToEar = double.Parse(textBoxTimeToEar.Text);
+            textBoxLightningResult.Text = $"The lightning strike was {pm.LightningMath(timeToEar):f3} kilometers away.";
         }
     }
 }
