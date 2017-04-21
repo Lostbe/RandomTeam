@@ -11,7 +11,7 @@ namespace PhysiCalc
         const double gravityAcceleration = 9.8;
         const double speedOfSound = .343;
 
-        public double FreeFallMath (double timeOrHeight, bool inputType)//if inputType = true, then
+        public double FreeFallMath (double timeOrHeight, bool inputType)//if inputType = true, then it is time, else is height
         {
             if(inputType == true)
             {
