@@ -16,7 +16,7 @@
         <Button x:Name="buttonCalculate" Content="Calculate" HorizontalAlignment="Left" Margin="70,287,0,0" VerticalAlignment="Top" Width="75" Click="buttonCalculate_Click"/>
         <TextBlock x:Name="textBlockHorizontalDistance" HorizontalAlignment="Left" Margin="10,320,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="50" Width="201" TextAlignment="Center"/>
         <Label x:Name="label2" Content="Please enter the initial velocity&#xD;&#xA;of the object (after all of the&#xD;&#xA;force has been applied m/s)." HorizontalAlignment="Left" Margin="10,223,0,0" VerticalAlignment="Top" Height="59" Width="178"/>
-        <TextBox x:Name="textBoxInitialVelocity" HorizontalAlignment="Left" Height="23" Margin="193,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxVelocityNot" HorizontalAlignment="Left" Height="23" Margin="193,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
