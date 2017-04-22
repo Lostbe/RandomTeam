@@ -10,9 +10,8 @@ namespace PhysiCalc
     {
         const double gravityAcceleration = 9.8;
         const double speedOfSound = .343;
-        const double convertRad = Math.PI / 180;
 
-        public double FreeFallMath (double timeOrHeight, bool inputType)//if inputType = true, then it is time, else is height
+        public double FreeFallMath (double timeOrHeight, bool inputType)//if inputType = false, then time is being inputed, otherwise height is inputed
         {
             if(inputType == true)
             {
@@ -30,16 +29,12 @@ namespace PhysiCalc
         }
         public double ProjectileDistance(double launchHeight, double theta, double initialVelocity)
         {
-            theta = theta * convertRad;
-            double yVelocity = Math.Sin(theta) * initialVelocity;
-            double xVelocity = Math.Sqrt((initialVelocity * initialVelocity) - (yVelocity * yVelocity));
-            double tToMax = (yVelocity / gravityAcceleration);
-            double yHeight = (yVelocity * tToMax) - ((gravityAcceleration / 2) * (tToMax * tToMax));
-            double heightOfFall = yHeight + launchHeight;
-            double timeToFall = FreeFallMath(heightOfFall, true);
-            double totalTime = timeToFall + tToMax;
-            double xDistance = totalTime * xVelocity;
-            return xDistance;
+            theta = theta * radianConvertionFactor;
+            double y = Math.Sin(theta) * initialVelocity;
+            double deltaY = (y * (y / gravityAcceleration)) - ((gravityAcceleration / 2) * (Math.Pow((y / gravityAcceleration), 2)));
+            double totalY = launchHeight + deltaY;
+            double totalT = (y / gravityAcceleration) + (FreeFallMath(totalY, true));
+            return (Math.Cos(theta) * initialVelocity) * totalT;
         }
     }
 }
