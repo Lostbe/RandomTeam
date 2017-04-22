@@ -9,6 +9,7 @@
     <Grid>
         <Image x:Name="skullAndCrossBones_jpeg" Source="skullAndCrossBones.jpeg" Stretch="Fill" Margin="0,-26,0,0"/>
         <Label x:Name="label" Content="YOU DIED" HorizontalAlignment="Left" Margin="95,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20"/>
+        <Button x:Name="button" Content="Back to menu" HorizontalAlignment="Left" Margin="207,243,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
 
     </Grid>
 </Window>
