@@ -74,11 +74,11 @@ namespace PhysiCalc
             }
             if (inputType == true)
             {
-                freeFallOutputTextBlock.Text += $"Whatever you drop (or you) will fall for {pm.FreeFallMath(Convert.ToDouble(textBoxChoiceData.Text), inputType)} seconds.";
+                freeFallOutputTextBlock.Text = $"Whatever you drop (or you) will fall for {pm.FreeFallMath(Convert.ToDouble(textBoxChoiceData.Text), inputType)} seconds.";
             }
             else
             {
-                freeFallOutputTextBlock.Text += $"It is {pm.FreeFallMath(Convert.ToDouble(textBoxChoiceData.Text), inputType):f3} meters tall, {recomendation}";
+                freeFallOutputTextBlock.Text = $"It is {pm.FreeFallMath(Convert.ToDouble(textBoxChoiceData.Text), inputType):f3} meters tall, {recomendation}";
             }
         }
     }

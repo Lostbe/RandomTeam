@@ -5,18 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PhysiCalc"
         mc:Ignorable="d"
-        Title="Projectile" Height="411.29" Width="386.291">
+        Title="Projectile" Height="428.309" Width="386.291" Background="#FFC19B4A">
     <Grid>
-        <Button x:Name="backToMenuBtn" Content="Back to menu" Margin="240,329,18,21" Click="backToMenuBtn_Click"/>
+        <Button x:Name="backToMenuBtn" Content="Back to menu" Margin="240,329,18,21" Click="backToMenuBtn_Click" BorderBrush="Black" Background="#FF8D6E1A"/>
         <Label x:Name="label" Content="Please enter the value of Theta (degrees). " Margin="10,111,137,243"/>
-        <TextBox x:Name="textBoxTheta" Margin="248,114,10,243" TextWrapping="Wrap"/>
+        <TextBox x:Name="textBoxTheta" Margin="248,114,10,257" TextWrapping="Wrap"/>
         <Label x:Name="label1" Content="Please enter how high above the&#xD;&#xA; ground the projectile is &#xD;&#xA;launched from (meters)." Margin="10,142,167,180"/>
-        <TextBox x:Name="textBoxLaunchHeight" HorizontalAlignment="Left" Height="23" Margin="166,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Image x:Name="projectileDiagram_png" Margin="10,10,92,286" Source="projectileDiagram.png" Stretch="Fill"/>
-        <Button x:Name="buttonCalculate" Content="Calculate" HorizontalAlignment="Left" Margin="70,287,0,0" VerticalAlignment="Top" Width="75" Click="buttonCalculate_Click"/>
+        <TextBox x:Name="textBoxLaunchHeight" HorizontalAlignment="Left" Height="26" Margin="166,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Image x:Name="projectileDiagram_png" Margin="10,10,92,300" Source="projectileDiagram.png" Stretch="Fill"/>
+        <Button x:Name="buttonCalculate" Content="Calculate" HorizontalAlignment="Left" Margin="70,287,0,0" VerticalAlignment="Top" Width="75" Click="buttonCalculate_Click" Background="#FF896A27" BorderBrush="Black"/>
         <TextBlock x:Name="textBlockHorizontalDistance" HorizontalAlignment="Left" Margin="10,320,0,10" TextWrapping="Wrap" Width="201" TextAlignment="Center"/>
         <Label x:Name="label2" Content="Please enter the initial velocity&#xD;&#xA;of the object (after all of the&#xD;&#xA;force has been applied m/s)." Margin="10,223,190,98"/>
-        <TextBox x:Name="textBoxVelocityNot" HorizontalAlignment="Left" Height="23" Margin="193,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBoxVelocityNot" HorizontalAlignment="Left" Height="26" Margin="193,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

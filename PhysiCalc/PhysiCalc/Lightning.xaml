@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PhysiCalc"
         mc:Ignorable="d"
-        Title="Lightning" Height="300" Width="270.681">
+        Title="Lightning" Height="308.966" Width="270.681">
     <Window.Background>
         <ImageBrush/>
     </Window.Background>
