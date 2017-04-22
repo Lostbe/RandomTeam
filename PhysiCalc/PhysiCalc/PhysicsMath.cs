@@ -10,7 +10,7 @@ namespace PhysiCalc
     {
         const double gravityAcceleration = 9.8;
         const double speedOfSound = .343;
-
+        const double radianConvertionFactor = Math.PI / 180;
         public double FreeFallMath (double timeOrHeight, bool inputType)//if inputType = false, then time is being inputed, otherwise height is inputed
         {
             if(inputType == true)

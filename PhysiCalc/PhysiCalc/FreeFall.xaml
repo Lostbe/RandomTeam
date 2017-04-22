@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PhysiCalc"
         mc:Ignorable="d"
-        Title="FreeFall" Height="363.468" Width="301.064">
+        Title="FreeFall" Height="410.672" Width="301.064">
     <Grid Margin="0,0,0,1">
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -16,9 +16,9 @@
         <Label x:Name="label" Content="What would you like to know?" Margin="67,8,50,0" Height="27" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlockChoiceInstruction" HorizontalAlignment="Left" Margin="73,119,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" Height="50" TextAlignment="Center"/>
         <TextBox x:Name="textBoxChoiceData" HorizontalAlignment="Left" Height="24" Margin="85,182,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" TextAlignment="Center"/>
-        <Button x:Name="buttonCalc" Content="Calculate" HorizontalAlignment="Left" Margin="110,0,0,76" Width="77" Background="#FFABAFBD" BorderThickness="0" Click="buttonCalc_Click" Height="34" VerticalAlignment="Bottom"/>
+        <Button x:Name="buttonCalc" Content="Calculate" HorizontalAlignment="Left" Margin="110,0,0,125" Width="77" Background="#FFABAFBD" BorderThickness="0" Click="buttonCalc_Click" Height="34" VerticalAlignment="Bottom"/>
         <Button x:Name="backToMenuBtn" Content="Back to menu" HorizontalAlignment="Left" Margin="206,0,0,10" Width="77" Click="backToMenuBtn_Click" Height="20" VerticalAlignment="Bottom"/>
-        <TextBlock x:Name="freeFallOutputTextBlock" Margin="110,0,106,17" TextWrapping="Wrap" Text="Result" TextAlignment="Center" Height="49" VerticalAlignment="Bottom"/>
+        <TextBlock x:Name="freeFallOutputTextBlock" Margin="61,0,56,44" TextWrapping="Wrap" TextAlignment="Center" Height="61" VerticalAlignment="Bottom"/>
 
     </Grid>
 </Window>

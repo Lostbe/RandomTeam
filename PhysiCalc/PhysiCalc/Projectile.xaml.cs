@@ -38,7 +38,7 @@ namespace PhysiCalc
             double theta = double.Parse(textBoxTheta.Text);
             double initialHeight = double.Parse(textBoxLaunchHeight.Text);
             double initialVelocity = double.Parse(textBoxVelocityNot.Text);
-            textBlockHorizontalDistance.Text = $"The projectile will travel {pm.ProjectileDistance(initialHeight, theta, initialVelocity)} meters horizontally";
+            textBlockHorizontalDistance.Text = $"The projectile will travel {pm.ProjectileDistance(initialHeight, theta, initialVelocity):f3} meters horizontally";
         }
     }
 }

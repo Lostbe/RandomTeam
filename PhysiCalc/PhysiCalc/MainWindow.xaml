@@ -5,16 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PhysiCalc"
         mc:Ignorable="d"
-        Title="Menu" Height="350" Width="250.163">
-    <Grid>
+        Title="Menu" Height="332" Width="239.163">
+    <Grid Margin="0,0,2,-2">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="80*"/>
-            <ColumnDefinition Width="437*"/>
+            <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="buttonFreeFall" Content="Freefall" Grid.Column="1" HorizontalAlignment="Left" Margin="46,65,0,0" VerticalAlignment="Top" Width="75" Click="buttonFreeFall_Click"/>
-        <Button x:Name="buttonLightning" Content="Lightning" Grid.Column="1" HorizontalAlignment="Left" Margin="46,130,0,0" VerticalAlignment="Top" Width="75" Click="buttonLightning_Click"/>
-        <Label x:Name="label" Content="Select Mode" Grid.Column="1" HorizontalAlignment="Left" Margin="45,10,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="buttonProjectile" Content="Projectile" Grid.Column="1" HorizontalAlignment="Left" Margin="46,196,0,0" VerticalAlignment="Top" Width="75" Click="buttonProjectile_Click"/>
+        <Button x:Name="buttonFreeFall" Content="Freefall" Margin="74,112,0,0" Click="buttonFreeFall_Click" Height="20" VerticalAlignment="Top" HorizontalAlignment="Left" Width="75"/>
+        <Button x:Name="buttonLightning" Content="Lightning" HorizontalAlignment="Left" Margin="75,162,0,0" VerticalAlignment="Top" Width="75" Click="buttonLightning_Click"/>
+        <Label x:Name="label" Content="What problem would you like to &#xD;&#xA;solve?" HorizontalAlignment="Left" Margin="3,17,0,0" Width="223" FontSize="14" FontWeight="Bold" Height="62" VerticalAlignment="Top"/>
+        <Button x:Name="buttonProjectile" Content="Projectile" Margin="75,213,0,0" VerticalAlignment="Top" Click="buttonProjectile_Click" HorizontalAlignment="Left" Width="75"/>
+        <Label x:Name="label1" Content="How high up are you, or how long will &#xD;&#xA;it take to hit the ground." Margin="4,70,0,0" HorizontalAlignment="Left" Width="222" Height="43" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="See how far away a lightning strike was." HorizontalAlignment="Left" Margin="3,131,0,0" VerticalAlignment="Top" Width="222"/>
+        <Label x:Name="label3" Content="Find how far a projectile will travel" HorizontalAlignment="Left" Margin="3,187,0,0" VerticalAlignment="Top" Width="220"/>
+        <Label x:Name="label4" Content="Bored?" HorizontalAlignment="Right" Margin="0,238,96,0" Height="26" VerticalAlignment="Top" RenderTransformOrigin="0.489,0.538"/>
+        <Button x:Name="buttonPlayGame" Content="Play Game" HorizontalAlignment="Left" Margin="74,264,0,0" Width="75" RenderTransformOrigin="0.507,0.45" Height="20" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>

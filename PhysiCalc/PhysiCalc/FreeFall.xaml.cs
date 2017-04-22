@@ -62,14 +62,23 @@ namespace PhysiCalc
 
         private void buttonCalc_Click(object sender, RoutedEventArgs e)
         {
-            freeFallOutputTextBlock.Text = $"{pm.FreeFallMath(Convert.ToDouble(textBoxChoiceData.Text), inputType)}";
+            string recomendation = "";
+            const int three = 3;
+            if (pm.FreeFallMath(double.Parse(textBoxChoiceData.Text), inputType) > three)
+            {
+                recomendation = "I would not recomend jumping off.";
+            }
+                else
+            {
+                recomendation = "";
+            }
             if (inputType == true)
             {
-                freeFallOutputTextBlock.Text += " sec";
+                freeFallOutputTextBlock.Text += $"Whatever you drop (or you) will fall for {pm.FreeFallMath(Convert.ToDouble(textBoxChoiceData.Text), inputType)} seconds.";
             }
             else
             {
-                freeFallOutputTextBlock.Text += " meters";
+                freeFallOutputTextBlock.Text += $"It is {pm.FreeFallMath(Convert.ToDouble(textBoxChoiceData.Text), inputType):f3} meters tall, {recomendation}";
             }
         }
     }

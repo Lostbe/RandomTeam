@@ -36,7 +36,14 @@ namespace PhysiCalc
         private void buttonLightningDistance_Click(object sender, RoutedEventArgs e)
         {
             double timeToEar = double.Parse(textBoxTimeToEar.Text);
+            if (timeToEar == 0)
+            {
+                YouDied youDiedForm = new YouDied();
+                youDiedForm.Show();
+                this.Close();
+            }
             textBlockLightningStrike.Text = $"The lightning strike was {pm.LightningMath(timeToEar):f3} kilometers away.";
+
         }
     }
 }
