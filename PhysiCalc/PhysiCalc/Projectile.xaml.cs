@@ -19,9 +19,11 @@ namespace PhysiCalc
     /// </summary>
     public partial class Projectile : Window
     {
+        private PhysicsMath pm;
         public Projectile()
         {
             InitializeComponent();
+            pm = new PhysicsMath();
         }
 
         private void backToMenuBtn_Click(object sender, RoutedEventArgs e)
@@ -33,7 +35,10 @@ namespace PhysiCalc
 
         private void buttonCalculate_Click(object sender, RoutedEventArgs e)
         {
-
+            double theta = double.Parse(textBoxTheta.Text);
+            double initialHeight = double.Parse(textBoxLaunchHeight.Text);
+            double initialVelocity = double.Parse(textBoxInitialVelocity.Text);
+            textBlockHorizontalDistance.Text = $"The projectile will travel {pm.ProjectileDistance(initialHeight, theta, initialVelocity)} meters horizontally";
         }
     }
 }

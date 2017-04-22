@@ -29,11 +29,14 @@ namespace PhysiCalc
         }
         public double ProjectileDistance(double launchHeight, double theta, double initialVelocity)
         {
-            double x = Math.Sqrt(Math.Pow(initialVelocity, 2) - Math.Pow((Math.Sin(theta * Math.PI / 180) * initialVelocity), 2));
-            double t = (Math.Sin(theta * Math.PI / 180) * initialVelocity) / gravityAcceleration;
-            double d = (Math.Sin(theta * Math.PI / 180) * t + (gravityAcceleration / 2 * Math.Pow(t, 2))) + launchHeight;
-            return x * (t + FreeFallMath(d, false));
-
+            theta = theta * (Math.PI / 180);
+            double yVelocity = (Math.Sin(theta)) * initialVelocity;
+            double xVelocity = Math.Sqrt(Math.Pow(initialVelocity, 2) - (Math.Pow((yVelocity), 2)));
+            double tToMaxHeight = (yVelocity) / gravityAcceleration;
+            double totalHeight = ((yVelocity * tToMaxHeight) + ((-1 * (gravityAcceleration / 2)) * (Math.Pow(tToMaxHeight, 2)))) + launchHeight;
+            double totalTime = (tToMaxHeight + (FreeFallMath(totalHeight, false)));
+            double xDistance = xVelocity * totalTime;
+            return xDistance;
         }
     }
 }
