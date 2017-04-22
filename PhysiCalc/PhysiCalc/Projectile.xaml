@@ -5,18 +5,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PhysiCalc"
         mc:Ignorable="d"
-        Title="Projectile" Height="451.551" Width="386.291" Background="#FFC19B4A">
+        Title="Projectile" Height="481" Width="413.163">
     <Grid>
-        <Button x:Name="backToMenuBtn" Content="Back to menu" Margin="240,382,18,21" Click="backToMenuBtn_Click" BorderBrush="Black" Background="#FF8D6E1A"/>
-        <Label x:Name="label" Content="Please enter the value of Theta (degrees). " Margin="10,111,137,243"/>
-        <TextBox x:Name="textBoxTheta" Margin="248,114,10,285" TextWrapping="Wrap"/>
-        <Label x:Name="label1" Content="Please enter how high above the&#xD;&#xA; ground the projectile is &#xD;&#xA;launched from (meters)." Margin="10,142,167,180"/>
-        <TextBox x:Name="textBoxLaunchHeight" HorizontalAlignment="Left" Height="26" Margin="166,170,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Image x:Name="projectileDiagram_png" Margin="10,10,92,319" Source="projectileDiagram.png" Stretch="Fill"/>
-        <Button x:Name="buttonCalculate" Content="Calculate" HorizontalAlignment="Left" Margin="210,293,0,0" VerticalAlignment="Top" Width="103" Click="buttonCalculate_Click" Background="#FF896A27" BorderBrush="Black" Height="29"/>
-        <TextBlock x:Name="textBlockHorizontalDistance" HorizontalAlignment="Left" Margin="10,340,0,10" TextWrapping="Wrap" Width="201" TextAlignment="Center"/>
-        <Label x:Name="label2" Content="Please enter the initial velocity&#xD;&#xA;of the object (after all of the&#xD;&#xA;force has been applied m/s)." Margin="15,245,185,125"/>
-        <TextBox x:Name="textBoxVelocityNot" HorizontalAlignment="Left" Height="26" Margin="193,242,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="backToMenuBtn" Content="Back to menu" Margin="287,403,10,10" Click="backToMenuBtn_Click" BorderBrush="Black" Background="White"/>
+        <Label x:Name="label" Content="Please enter the value of Theta (degrees). " Margin="0,111,0,308" FontSize="16"/>
+        <TextBox x:Name="textBoxTheta" Margin="309,116,18,308" TextWrapping="Wrap"/>
+        <Label x:Name="label1" Content="Please enter how high above the&#xD;&#xA; ground the projectile is &#xD;&#xA;launched from (meters)." Margin="0,147,0,224" FontSize="16"/>
+        <TextBox x:Name="textBoxLaunchHeight" HorizontalAlignment="Left" Height="26" Margin="248,181,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147"/>
+        <Image x:Name="projectileDiagram_png" Margin="10,10,119,356" Source="projectileDiagram.png" Stretch="Fill"/>
+        <Button x:Name="buttonCalculate" Content="Calculate" HorizontalAlignment="Left" Margin="149,308,0,0" VerticalAlignment="Top" Width="103" Click="buttonCalculate_Click" Background="White" BorderBrush="Black" Height="29"/>
+        <TextBlock x:Name="textBlockHorizontalDistance" HorizontalAlignment="Left" Margin="37,340,0,10" TextWrapping="Wrap" Width="201" TextAlignment="Center"/>
+        <Label x:Name="label2" Content="Please enter the initial velocity&#xD;&#xA;of the object (after all of the&#xD;&#xA;force has been applied m/s)." Margin="0,223,0,147" FontSize="16"/>
+        <TextBox x:Name="textBoxVelocityNot" HorizontalAlignment="Left" Height="26" Margin="248,254,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147"/>
 
     </Grid>
 </Window>
