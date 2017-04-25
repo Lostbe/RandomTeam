@@ -5,20 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PhysiCalc"
         mc:Ignorable="d"
-        Title="FreeFall" Height="481" Width="413.163">
+        ResizeMode="NoResize"
+        Title="FreeFall" Height="519.91" Width="437.163">
     <Grid Margin="0,0,0,1">
         <Grid.RowDefinitions>
             <RowDefinition/>
             <RowDefinition Height="0*"/>
         </Grid.RowDefinitions>
-        <RadioButton x:Name="radioButtonHeight" Content="Input Time" HorizontalAlignment="Left" Margin="130,101,0,0" VerticalAlignment="Top" Checked="radioButtonHeight_Checked" Height="32" Width="148" FontSize="16"/>
-        <RadioButton x:Name="radioButtonTime" Content="Input Height" HorizontalAlignment="Left" Margin="130,63,0,0" VerticalAlignment="Top" Checked="radioButtonTime_Checked" Height="33" Width="148" FontSize="16"/>
+        <RadioButton x:Name="radioButtonHeight" Content="Input Time" HorizontalAlignment="Left" Margin="158,91,0,0" VerticalAlignment="Top" Checked="radioButtonHeight_Checked" Height="32" Width="148" FontSize="16"/>
+        <RadioButton x:Name="radioButtonTime" Content="Input Height" HorizontalAlignment="Left" Margin="158,58,0,0" VerticalAlignment="Top" Checked="radioButtonTime_Checked" Height="33" Width="148" FontSize="16"/>
         <Label x:Name="label" Content="What information do you have?" Margin="0,10,0,0" Height="48" VerticalAlignment="Top" FontSize="20"/>
-        <TextBlock x:Name="textBlockChoiceInstruction" Margin="0,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="71" TextAlignment="Center" FontSize="16"/>
-        <TextBox x:Name="textBoxChoiceData" HorizontalAlignment="Left" Height="24" Margin="142,223,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" TextAlignment="Center"/>
-        <Button x:Name="buttonCalc" Content="Calculate" HorizontalAlignment="Left" Margin="156,0,0,143" Width="96" BorderThickness="1" Click="buttonCalc_Click" Height="44" VerticalAlignment="Bottom" Background="White" BorderBrush="Black" FontSize="20"/>
-        <Button x:Name="backToMenuBtn" Content="Back to menu" HorizontalAlignment="Left" Margin="261,0,0,27" Width="113" Click="backToMenuBtn_Click" Height="38" VerticalAlignment="Bottom"/>
-        <TextBlock x:Name="freeFallOutputTextBlock" Margin="0,0,0,70" TextWrapping="Wrap" TextAlignment="Center" Height="61" VerticalAlignment="Bottom" FontSize="16"/>
+        <TextBlock x:Name="textBlockChoiceInstruction" Margin="0,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="47" TextAlignment="Center" FontSize="16"/>
+        <TextBox x:Name="textBoxChoiceData" HorizontalAlignment="Left" Height="40" Margin="158,205,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="124" TextAlignment="Center" FontSize="16"/>
+        <Button x:Name="buttonCalc" Content="Calculate" HorizontalAlignment="Left" Margin="169,0,0,165" Width="96" BorderThickness="1" Click="buttonCalc_Click" Height="44" VerticalAlignment="Bottom" Background="White" BorderBrush="Black" FontSize="20"/>
+        <Button x:Name="backToMenuBtn" Content="Back to menu" HorizontalAlignment="Left" Margin="261,0,0,26" Width="113" Click="backToMenuBtn_Click" Height="38" VerticalAlignment="Bottom"/>
+        <TextBlock x:Name="freeFallOutputTextBlock" Margin="0,0,0,85" TextWrapping="Wrap" TextAlignment="Center" Height="61" VerticalAlignment="Bottom" FontSize="16"/>
 
     </Grid>
 </Window>

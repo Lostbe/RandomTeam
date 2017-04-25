@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Diagnostics;
 
 namespace PhysiCalc
 {
@@ -44,6 +45,16 @@ namespace PhysiCalc
             Projectile projectileForm = new Projectile();
             projectileForm.Show();
             this.Close();
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            ProcessStartInfo gameStarter = new ProcessStartInfo();
+            gameStarter.FileName = @"C:\Users\andre\Documents\Game\finished.exe";
+            gameStarter.CreateNoWindow = true;
+            gameStarter.UseShellExecute = true;
+            Process game = Process.Start(gameStarter);
+            game.Start();
         }
     }
 }

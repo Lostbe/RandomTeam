@@ -66,7 +66,7 @@ namespace PhysiCalc
             const int three = 3;
             if (pm.FreeFallMath(double.Parse(textBoxChoiceData.Text), inputType) > three)
             {
-                recomendation = "I would not recomend jumping off.";
+                recomendation = "I would not recomend jumping off ;)";
             }
                 else
             {
@@ -74,7 +74,7 @@ namespace PhysiCalc
             }
             if (inputType == true)
             {
-                freeFallOutputTextBlock.Text = $"Whatever you drop (or you) will fall for {pm.FreeFallMath(Convert.ToDouble(textBoxChoiceData.Text), inputType)} seconds.";
+                freeFallOutputTextBlock.Text = $"Whatever you drop (or you) will fall for {pm.FreeFallMath(Convert.ToDouble(textBoxChoiceData.Text), inputType):f3} seconds.";
             }
             else
             {
